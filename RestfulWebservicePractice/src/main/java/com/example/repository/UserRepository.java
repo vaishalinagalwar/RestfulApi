@@ -12,5 +12,6 @@ public interface UserRepository {
 	
 	public User save(User user);
 	public User delete(int id);
+	//public User update(int id);
 	
 }

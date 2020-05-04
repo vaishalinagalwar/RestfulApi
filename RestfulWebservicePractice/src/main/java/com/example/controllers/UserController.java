@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -83,4 +84,14 @@ public class UserController {
 				throw new UserNotFoundException("Id "+id+ " is not found");
 			}
 	}
+	/*
+	 * //Used to update One User
+	 * 
+	 * @PutMapping("/users/{id}")
+	 * 
+	 * public void updateById(@PathVariable int id) { User user=service.update(id);
+	 * 
+	 * if(user==null) { throw new UserNotFoundException("Id "+id+ " is not found");
+	 * } }
+	 */
 }

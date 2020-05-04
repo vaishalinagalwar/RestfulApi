@@ -6,8 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import com.example.models.User;
+import com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator;
 
 @Component
 public class UserRepositoryImpl implements UserRepository {
@@ -72,4 +74,12 @@ public class UserRepositoryImpl implements UserRepository {
 		return null;
 	}
 
+	/*
+	 * @Override //update the existing user
+	 * 
+	 * public User update(int id) { // TODO Auto-generated method stub
+	 * 
+	 * for(User user:users) { if(user.getId()==id) { //user.setName("Ajay"); return
+	 * user; } } return null; }
+	 */
 }
